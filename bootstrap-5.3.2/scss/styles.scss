@@ -1,0 +1,77 @@
+@import './bootstrap.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #03050d;
+}
+
+p,
+li {
+    font-size: 20px;
+}
+
+.container-fluid {
+    max-width: 1800px;
+}
+
+.list-group li {
+    list-style-type: none;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.home {
+    background-image: url(../../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.icono {
+    height: 60px;
+    transition: 0.35s;
+
+    &:hover {
+        transform: scale(1.15) rotate(-4deg);
+        transition: transform 0.35s ease;
+    }
+}
+
+.skill {
+    background-color: #3c3a42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 190px;
+    
+    &:hover {
+        background-color: #42424b;
+        border: 3px solid #40e0d0;
+        transition: background-color 0.35s ease;
+    }
+
+    & img {
+        transition: 0.35s;
+        height: 60%;
+        overflow: auto;
+        object-fit: contain;
+    }
+
+    &:hover img {
+        transform: scale(1.1);
+        transition: transform 0.35s ease;
+    }
+}
+
+.card-body {
+    background-color: #3b3a42;
+    color: white;
+}
+
+#skills {
+    background-image: url(../../img/wall.jpg);
+    background-position: 600px;
+    background-size: cover;
+}
+
