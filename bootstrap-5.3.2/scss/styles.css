@@ -12006,10 +12006,12 @@ li {
 .icono {
   height: 60px;
   transition: 0.35s;
+  border: 3px solid white;
 }
 .icono:hover {
+  border: 3px solid #40e0d0;
   transform: scale(1.15) rotate(-4deg);
-  transition: transform 0.35s ease;
+  transition: transform 0.35s ease, border 0.35s ease;
 }
 
 .skill {
@@ -12018,11 +12020,13 @@ li {
   align-items: center;
   justify-content: center;
   max-height: 190px;
+  border: 3px solid #3c3a42;
+  transform: 0.35s;
 }
 .skill:hover {
   background-color: #42424b;
   border: 3px solid #40e0d0;
-  transition: background-color 0.35s ease;
+  transition: background-color 0.35s ease, border 0.35s ease;
 }
 .skill img {
   transition: 0.35s;
@@ -12034,6 +12038,16 @@ li {
 .skill:hover img {
   transform: scale(1.1);
   transition: transform 0.35s ease;
+}
+
+.card {
+  transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 10px 10px 10px #181a21;
+  transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .card-body {
